@@ -1,23 +1,17 @@
 import React from "react";
-import '../../assets/SearchResults.css';
-import Counter from '../Counter';
+import Toolbar from "../Toolbar"
+import SearchResults from '../../components/SearchResults';
+import Counter from "../../components/Counter"
 
-function SearchResults(props) {
-
+function SearchResultsPage(props) {
     return (
-        <div className="container-fluid container-sm container-md container-lg">
-            <div className="row">
-                <Counter />
-            </div>
-            <div className="results-list">
-                <ul className="results-items">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-            </div>
-        </div>
+        <main>
+            <Toolbar />
+            <Counter />
+            <SearchResults />
+        </main>
     )
+
 }
 
-export default SearchResults;
+export default SearchResultsPage;

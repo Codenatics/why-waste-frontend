@@ -6,7 +6,7 @@
 
 .container-lg{
     position: absolute;
-    top: 12%;
+    top: 25%;
     left: 10%;
     right: 10%;
 }
@@ -24,6 +24,7 @@
     list-style-type: none;
     padding: 20px 30px ;
     font-size: 24px;
+    cursor: pointer;
 }
 
 @media (max-width: 500px){
@@ -38,6 +39,7 @@
     }
     .results-items li {
         font-size: 16px;
+        padding: 25px;
     }
     
 }

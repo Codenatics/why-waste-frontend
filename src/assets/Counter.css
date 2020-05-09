@@ -1,0 +1,16 @@
+p {
+    position: fixed;
+    top: 15%;
+    left: 12%;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+}
+
+@media (max-width: 500px){
+    p{
+        left: 12%;
+        top: 15%;
+        font-size: 16px;
+    }
+}
