@@ -1,0 +1,43 @@
+.row{
+    margin: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.container-lg{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    right: 10%;
+}
+
+.results-items {
+    margin: 0;
+    padding:0;
+}
+.results-items li{
+    height: 80px;
+    border: 1px solid white;
+    background-color: white;
+    margin-bottom: 5px;
+    color: black;
+    list-style-type: none;
+    padding: 20px 30px ;
+    font-size: 24px;
+}
+
+@media (max-width: 500px){
+    .row, .container-fluid{
+        font-size: 18px;
+    }
+    .container-fluid{
+        width: 100%;
+        left:0%;
+        margin: 0;
+        padding:0;
+    }
+    .results-items li {
+        font-size: 16px;
+    }
+    
+}

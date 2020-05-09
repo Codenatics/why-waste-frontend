@@ -1,4 +1,22 @@
-body{
+body {
+    font-family: 'Dosis', sans-serif;
     background-color: rgb(199, 36, 104);
 }
 
+#main-link {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#main-link:hover, #main-link:active {
+    color: maroon;
+    text-decoration: none;
+}

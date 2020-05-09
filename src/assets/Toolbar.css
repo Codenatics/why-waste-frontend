@@ -21,7 +21,9 @@
 .toolbar_navigation a {
     text-decoration: none;
     list-style: none;
-    color: white
+    color: rgb(199, 36, 104);
+    font-size: 24px;
+    font-weight: 800;
 }
 .toolbar_navigation-items ul{
     list-style: none;
