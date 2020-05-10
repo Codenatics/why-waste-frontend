@@ -11,6 +11,8 @@ function LandingPage() {
       <div style={{height:'100%'}}>
         <main style={{marginTop:'56px'}}>
           <Toolbar />
+          <SideDrawer />
+          <Backdrop />
           <SearchBox />
           <a href="/" id="main-link">I want to donate food</a>
         </main>

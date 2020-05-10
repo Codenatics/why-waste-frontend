@@ -3,7 +3,7 @@ import "../assets/Counter.css"
 
 function Counter(props){
     return(
-        <p>There are 10 meals available in Nothern Quarter</p>
+        <p>There are {props.count} meals available in {props.postcode}:</p>
     )
 }
 export default Counter;
