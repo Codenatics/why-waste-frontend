@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../../src/assets/SearchResults.css';
 
 function SearchResults(props) {
 
     return (
+
         <div className="container-fluid container-sm container-md container-lg">
             <div className="row results-items">
                 <div className="col-5 col-sm-5 col-md-5 col-lg-6">
@@ -20,6 +21,7 @@ function SearchResults(props) {
                 </div>
             </div>
         </div>
+
     )
 }
 
