@@ -1,14 +1,13 @@
 import React from "react";
 import "../../assets/Register.css";
+import { Link } from "react-router-dom";
 
 function RegisterForm() {
     return (
-
-        <form>
-
-        <header>
-            <h1>Register today!</h1>
-        </header>
+        <form className="register-form">
+            <header>
+                <h1>Register today!</h1>
+            </header>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -40,6 +39,7 @@ function RegisterForm() {
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
+            <Link to="/"><button type="submit" class="btn btn-secondary">Back</button></Link>
         </form>
     )
 }

@@ -1,4 +1,4 @@
-form {
+.register-form {
     position: absolute;
     left: 20%;
     width: 50%;
@@ -7,17 +7,20 @@ form {
     color: white;
     font-weight: 600;
 }
-header {
+.register-form header {
     margin: 30px;
 }
 
-h1 {
+.register-form h1 {
     color:white;
     text-align: center;
 }
+.btn-secondary{
+    margin-left: 15px;
+}
 
 @media (max-width:500px){
-    form{
+    .register-form{
         width:80%;
         position: absolute;
         left:0;
