@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LandingPage from './components/pages/LandingPage';
 import SearchResultsPage from './components/pages/SearchResultsPage';
-import {Route, Switch, Router} from 'react-router-dom';
-import PostcodeLookup from 'react-postcode-lookup'
+import {Route, Switch} from 'react-router-dom';
 import Register from "../src/components/pages/Register";
 
 function App() {

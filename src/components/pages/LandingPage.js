@@ -14,6 +14,7 @@ function LandingPage(props) {
           <Toolbar />
           {/* <SideDrawer /> */}
           {/* <Backdrop /> */}
+          
           <SearchBox />
           <Link to="/Register" id="main-link">I want to donate food</Link>
         </main>
