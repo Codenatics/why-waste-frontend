@@ -1,28 +1,22 @@
-// import React, { useState } from "react";
-// import '../assets/Searchbox.css';
-// import { Link, BrowserRouter, Redirect } from "react-router-dom";
 
-// function SearchBox(props) {
+import React, { useState } from "react";
+import '../assets/Searchbox.css';
+import { Link, BrowserRouter } from "react-router-dom";
 
-//     const [search, setSearch] = useState("")
-//     const [setQuery] = useState("")
+function SearchBox(props) {
 
-//     const updatedSearch = (event) => {
-//         setSearch(event.target.value)
-//     }
+    const [search, setSearch] = useState("")
 
-//     const submitQuery = (event) => {
-//         event.preventDefault();
-//             setQuery(search);
-//             props.submitQueryFunc()
-//     }
+    const updatedSearch = (event) => {
+        setSearch(event.target.value)
+    }
 
-//     return (
-//         <form className="search-box" onSubmit={submitQuery}>
-//             <input type="text" placeholder="Enter your postcode" value={search} onChange={updatedSearch}></input>
-//             <Link to="/SearchResults"><button type="submit" class="btn btn-search">Search</button></Link>
-//         </form>
-//     )
-// }
+    return (
+        <form className="search-box">
+            <input type="text" placeholder="Enter your postcode" value={search} onChange={updatedSearch}></input>
+            <Link to={`/SearchResults?postcode=${search}`}><button class="btn btn-search">Search</button></Link>
+        </form>
+    )
+}
 
-// export default SearchBox;
+export default SearchBox;

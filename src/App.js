@@ -9,8 +9,8 @@ function App() {
   return (
     <Switch>
       <Route path="/SearchResults" component={SearchResultsPage} />
-      <Route path="/Register" component={Register} />
-      <Route path="/" component={LandingPage} />
+      <Route exact path="/Register" component={Register} />
+      <Route exact path="/" component={LandingPage} />
     </Switch>
   );
 }

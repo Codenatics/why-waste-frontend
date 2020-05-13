@@ -5,12 +5,16 @@ import Toolbar from "../Toolbar";
 import SideDrawer from "../SideDrawer";
 import SearchResults from '../SearchResults';
 import Counter from "../Counter";
+import {useLocation} from "react-router-dom";
 
 function SearchResultsPage(props) {
     const [meals, setMeals] = useState([]);
 
-    const submitQuery = (postcode) => {
-        axios.get(`https://z0akxs8ksh.execute-api.eu-west-1.amazonaws.com/dev/restaurant/${postcode}`)
+    const router = useLocation();
+    console.log(router)
+
+    useEffect(() => {
+        axios.get(`https://z0akxs8ksh.execute-api.eu-west-1.amazonaws.com/dev/restaurant/BL1`)
           .then(response => {
             console.log("Success", response.data)
             setMeals(response.data);
@@ -18,7 +22,7 @@ function SearchResultsPage(props) {
           .catch(err => {
             console.log("Error", err);
           });
-      }
+      }, [])
       
 
     return (
@@ -36,7 +40,6 @@ function SearchResultsPage(props) {
                                 Quantity={meal.Quantity}
                                 UseByDate={meal.UseByDate}
                                 Name={meal.Name}
-                                submitQueryFunc={submitQuery}
                                 
                             />
                         )

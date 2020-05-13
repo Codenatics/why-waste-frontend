@@ -3,22 +3,10 @@ import "../../assets/base.css";
 import Toolbar from "../Toolbar";
 import SideDrawer from "../../components/SideDrawer";
 import Backdrop from "../../components/Backdrop";
-// import SearchBox from '../../components/SearchBox';
+import SearchBox from '../../components/SearchBox';
 import { Link } from "react-router-dom";
 
 function LandingPage(props) {
-
-  const [search, setSearch] = useState("")
-  const [query, setQuery] = useState("")
-
-  const updatedSearch = (event) => {
-    setSearch(event.target.value)
-  }
-
-  const submitQuery = (event) => {
-    setQuery(search)
-    props.submitQueryFunc(search)
-}
 
   return (
     <div style={{ height: '100%' }}>
@@ -27,12 +15,7 @@ function LandingPage(props) {
         {/* <SideDrawer /> */}
         {/* <Backdrop /> */}
 
-        {/* <SearchBox /> */}
-
-        <form className="search-box" onSubmit={submitQuery}>
-          <input type="text" placeholder="Enter your postcode" value={search} onChange={updatedSearch}></input>
-          <Link to="/SearchResults"><button type="submit" class="btn btn-search">Search</button></Link>
-        </form>
+        <SearchBox />
 
         <Link to="/Register" id="main-link">I want to donate food</Link>
       </main>
