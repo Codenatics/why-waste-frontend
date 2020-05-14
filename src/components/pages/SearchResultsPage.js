@@ -5,7 +5,9 @@ import Toolbar from "../Toolbar";
 import SideDrawer from "../SideDrawer";
 import SearchResults from '../SearchResults';
 import Counter from "../Counter";
-import {useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import queryString from "query-string";
+
 
 function SearchResultsPage(props) {
     const [meals, setMeals] = useState([]);
@@ -14,16 +16,18 @@ function SearchResultsPage(props) {
     console.log(router)
 
     useEffect(() => {
-        axios.get(`https://z0akxs8ksh.execute-api.eu-west-1.amazonaws.com/dev/restaurant/BL1`)
-          .then(response => {
-            console.log("Success", response.data)
-            setMeals(response.data);
-          })
-          .catch(err => {
-            console.log("Error", err);
-          });
-      }, [])
-      
+        const values = queryString.parse(props.location.search);
+        const postcode = values.postcode
+        axios.get(`https://z0akxs8ksh.execute-api.eu-west-1.amazonaws.com/dev/restaurant/${postcode}`)
+            .then(response => {
+                console.log("Success", response.data)
+                setMeals(response.data);
+            })
+            .catch(err => {
+                console.log("Error", err);
+            });
+    }, [])
+
 
     return (
         <main>
@@ -33,18 +37,18 @@ function SearchResultsPage(props) {
                 count={meals.length} />
             <div className="container">
                 {meals.map(meal => {
-                        return (
-                            <SearchResults
-                                key={meal.FoodID}
-                                Foodtype={meal.FoodType}
-                                Quantity={meal.Quantity}
-                                UseByDate={meal.UseByDate}
-                                Name={meal.Name}
-                                
-                            />
-                        )
-                    })}
-                   
+                    return (
+                        <SearchResults
+                            key={meal.FoodID}
+                            Foodtype={meal.FoodType}
+                            Quantity={meal.Quantity}
+                            UseByDate={meal.UseByDate}
+                            Name={meal.Name}
+
+                        />
+                    )
+                })}
+
             </div>
         </main>
     )
