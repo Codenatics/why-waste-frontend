@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import '../../src/assets/SearchResults.css';
+import moment from "moment";
 
 function SearchResults(props) {
 
@@ -17,7 +18,7 @@ function SearchResults(props) {
                     {props.Quantity}
                 </div>
                 <div className="col-3 col-sm-3 col-md-3 col-lg-2">
-                    {props.UseByDate}
+                    {moment(props.UseByDate).format("ddd, MMM Do")}
                 </div>
                 <div className="col-3 col-sm-3 col-md-3 col-lg-3">
                     {props.Name}
