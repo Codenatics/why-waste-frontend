@@ -7,7 +7,7 @@ import SearchResults from '../SearchResults';
 import Counter from "../Counter";
 import { useLocation } from "react-router-dom";
 import queryString from "query-string";
-
+import ResultsHeader from "../ResultsHeader";
 
 function SearchResultsPage(props) {
     const [meals, setMeals] = useState([]);
@@ -33,26 +33,29 @@ function SearchResultsPage(props) {
         <main>
             <Toolbar />
             {/* <SideDrawer /> */}
-            <Counter 
+            <Counter
                 count={meals.length} />
+                <ResultsHeader />
             <div className="container">
                 {meals.map(meal => {
                     return (
-                        <SearchResults
-                            key={meal.FoodID}
-                            Foodtype={meal.FoodType}
-                            Quantity={meal.Quantity}
-                            UseByDate={meal.UseByDate}
-                            Name={meal.Name}
+                        <React.Fragment>
+                            <SearchResults
+                                key={meal.FoodID}
+                                Foodtype={meal.FoodType}
+                                Quantity={meal.Quantity}
+                                UseByDate={meal.UseByDate}
+                                Name={meal.Name}
 
-                        />
+                            />
+                        </React.Fragment>
+
                     )
-                })}
-
-            </div>
+                    })}
+                </div>
         </main>
-    )
 
+    )
 }
 
 export default SearchResultsPage;

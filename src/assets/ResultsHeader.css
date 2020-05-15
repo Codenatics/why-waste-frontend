@@ -1,0 +1,47 @@
+.header-results{
+    position: fixed;
+    top:25%;
+    left: 12%;
+    width: 75%;
+}
+.header-items{
+    background-color: rgba(252, 252, 252, 0.726);
+    color:  rgb(49, 11, 11);
+    border-radius: 3px;
+    font-weight: bolder;
+    cursor: auto ;
+    font-size: 28px;
+    padding: 4px;
+}
+
+@media (max-width: 500px) {
+    
+    .header-results {
+        width: 92%;
+        top: 20%;
+        left: 4%;
+        padding: 0px;
+        margin: 0 0 10px;
+        align-content: center;
+        align-items: center;  
+      }
+      .header-items{
+        padding:0px;
+        margin: 0px;
+        align-content: center;
+    }
+   .col-5, .col-4, .col-1, .col-3{
+       font-size: 14px;
+       justify-content: center;
+       justify-content: center;
+       align-content: center;
+} 
+
+   .item {
+        width: 100%;
+        text-align: center;
+        margin-left: 7px;
+        
+   }
+    
+}
