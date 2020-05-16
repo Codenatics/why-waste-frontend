@@ -1,0 +1,55 @@
+.donate-form, .register-form {
+    position: absolute;
+    margin: 50px;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+}
+
+.register-form{
+    width: 50%;
+    left: 20%;
+
+}
+.donate-form{
+    width: 30%;
+    left: 30%;
+}
+
+#consumeBy {
+    width: 40%;
+    text-align: center;
+}
+.register-form header, .donate-form header {
+    text-align: center;
+    margin: 40px;
+}
+.register-form header h1, .donate-form header h1{
+    color:white;
+}
+.donate-form header h4 {
+    margin: 30px;
+}
+.btn-secondary{
+    margin-left: 15px;
+}
+
+@media (max-width:500px){
+    .register-form{
+        width:80%;
+        position: absolute;
+        top: -10px;
+        left:0;
+        right:0;
+    }
+    .donate-form{
+        width:80%;
+        position: absolute;
+        left:-10px;
+        right:0;
+    }
+    #consumeBy{
+        width: 100%;
+        text-align: justify;
+    }
+}

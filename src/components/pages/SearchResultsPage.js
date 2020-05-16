@@ -9,9 +9,9 @@ import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import ResultsHeader from "../ResultsHeader";
 
+
 function SearchResultsPage(props) {
     const [meals, setMeals] = useState([]);
-
     const router = useLocation();
     console.log(router)
 
@@ -35,7 +35,8 @@ function SearchResultsPage(props) {
             {/* <SideDrawer /> */}
             <Counter
                 count={meals.length} />
-                <ResultsHeader />
+            <ResultsHeader />
+            
             <div className="container">
                 {meals.map(meal => {
                     return (
@@ -46,15 +47,12 @@ function SearchResultsPage(props) {
                                 Quantity={meal.Quantity}
                                 UseByDate={meal.UseByDate}
                                 Name={meal.Name}
-
                             />
                         </React.Fragment>
-
                     )
-                    })}
-                </div>
+                })}
+            </div>
         </main>
-
     )
 }
 

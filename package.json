@@ -17,6 +17,7 @@
     "react-hook-form": "^5.7.2",
     "react-hooks-lib": "^0.1.5",
     "react-postcode-lookup": "^2.0.0",
+    "react-responsive-modal": "^5.0.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
