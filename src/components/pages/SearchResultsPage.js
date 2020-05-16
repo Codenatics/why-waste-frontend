@@ -35,7 +35,7 @@ function SearchResultsPage(props) {
             {/* <SideDrawer /> */}
             <Counter
                 count={meals.length} />
-            <ResultsHeader />
+            {meals.length === 0 ? "" :<ResultsHeader />}
             
             <div className="container">
                 {meals.map(meal => {
