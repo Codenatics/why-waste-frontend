@@ -28,7 +28,7 @@ function Donate() {
                     <input type="date" class="form-control" id="consumeBy" />
                 </div>
 
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-primary">Donate</button>
                 <Link to="/Register"><button type="submit" class="btn btn-secondary">Register</button></Link>
             </form>
         </React.Fragment>

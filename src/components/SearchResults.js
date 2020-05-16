@@ -44,7 +44,7 @@ function SearchResults(props) {
                 <br></br>
                 <h5>The Market Place</h5>
                 <h5>Bolton</h5>
-                <h5>L1 2AL</h5>
+                <h5>BL1 2AL</h5>
                 <h5>01204 937 335</h5>
                 <h5>some_one@prezzo.com</h5>
                 </div>
