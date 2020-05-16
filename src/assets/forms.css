@@ -26,9 +26,13 @@
 }
 .register-form header h1, .donate-form header h1{
     color:white;
+    text-shadow: 1px 1px 2px black; 
+
 }
 .donate-form header h4 {
     margin: 30px;
+    text-shadow: 1px 1px 2px black; 
+
 }
 .btn-secondary{
     margin-left: 15px;

@@ -21,20 +21,15 @@
     background-color: pink;
     border: 1px pink solid;
     border-radius: 4px;
+    font-weight: bolder;
+
 }
 .validation {
     color: yellow;
     position: fixed;
     top: 57%;
-    left: 32.5%
-}
-.label-postcode {
-    position: fixed;
-    top: 45%;
-    left:32.5%;    
-}
-.label-postcode h5 {
-    font-weight: bolder;
+    left: 32.5%;
+    text-shadow: 1px 1px 2px black; 
 }
 
 
@@ -50,8 +45,16 @@
         margin-left: 10px;
         width: 80%;
         margin-bottom: 10px;
+        
     }
     .btn-search{
-        width: 100%;
+        width: 80%;
+    }
+
+    .validation {
+        color: yellow;
+        position: fixed;
+        top: 66%;
+        left: 11%;
     }
 }

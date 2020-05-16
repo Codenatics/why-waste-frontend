@@ -6,10 +6,13 @@ body {
 h3 {
     text-align: center;
     position: fixed;
-    top: 30%;
-    left: 25%;
+    top: 20%;
+    left: 35%;
     font-weight: bolder;
     font-size: 45px;
+    text-shadow: 1px 1px 2px black; 
+    color: white;
+
 }
 
 #main-link {
@@ -23,6 +26,8 @@ h3 {
     color: white;
     font-weight: 600;
     font-size: 30px;
+    text-shadow: 1px 1px 1px black; 
+
 }
 
 #main-link:hover, #main-link:active {
@@ -32,9 +37,12 @@ h3 {
 
 @media (max-width: 500px){
     h3 {
-        top: 40%;
-        font-size: 20px;
-        left: 8%;
-        color: black;
+        top: 30%;
+        font-size: 28px;
+        left: 13%;
+        color: white;
+        text-shadow: 1px 1px 1px black; 
+
     }
+    
 }

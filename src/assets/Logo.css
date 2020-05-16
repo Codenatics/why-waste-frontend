@@ -4,6 +4,8 @@ h1{
     font-weight: 800;    
     font-size: 34px;
     margin: 5px 0 0 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404); 
+
 }
 
 @media(min-width: 769px){
