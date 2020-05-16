@@ -22,6 +22,20 @@
     border: 1px pink solid;
     border-radius: 4px;
 }
+.validation {
+    color: yellow;
+    position: fixed;
+    top: 57%;
+    left: 32.5%
+}
+.label-postcode {
+    position: fixed;
+    top: 45%;
+    left:32.5%;    
+}
+.label-postcode h5 {
+    font-weight: bolder;
+}
 
 
 @media (max-width: 600px){
