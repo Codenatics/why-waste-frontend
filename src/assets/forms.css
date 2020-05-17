@@ -37,6 +37,17 @@
 .btn-secondary{
     margin-left: 15px;
 }
+.thanks-message{
+    color: white;
+    position: fixed;
+    top: 15%;
+    left: 8%;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 1px black; 
+    
+}
 
 @media (max-width:500px){
     .register-form{
