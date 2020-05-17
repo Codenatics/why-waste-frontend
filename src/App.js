@@ -13,6 +13,7 @@ function App() {
       <Route exact path="/Donate" component={Donate} />
       <Route exact path="/Register" component={Register} />
       <Route exact path="/" component={LandingPage} />
+
     </Switch>
   );
 }

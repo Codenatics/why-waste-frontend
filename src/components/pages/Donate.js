@@ -57,7 +57,6 @@ function Donate(props) {
                 </div>
 
                 <button type="text" class="btn btn-primary" onClick={handleSaveClick}>Donate</button>
-                <Link to="/Register"><button type="submit" class="btn btn-secondary">Register</button></Link>
             </form>}
 
         </React.Fragment>

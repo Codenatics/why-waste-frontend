@@ -40,7 +40,7 @@ function SearchResults(props) {
             </div>
             <Modal open={modalIsOpen} onClose={isClosed}>
                 <div className="container-modal">
-                <h1>Restaurant Details</h1>
+                <h1>Please collect your meal at :</h1>
                 <br></br>
                 <h5>The Market Place</h5>
                 <h5>Bolton</h5>

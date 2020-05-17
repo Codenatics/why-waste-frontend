@@ -18,6 +18,7 @@ function Toolbar(props) {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/">Donors</a></li>
+                        <li><a href="/register">Register</a></li>
                     </ul>
                 </div>
             </nav>
