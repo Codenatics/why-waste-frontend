@@ -1,6 +1,6 @@
 # Connecting restaurants with a surplus with people in need! - Frontend
 
-This is the front end of a Todo Application, built throughout the Tech Returners Your Journey Into Tech course. It integrates with a backend, available here: https://github.com/Codenatics/why-waste-backend.
+This is the front end of WhyWaste, an app designed to connect restaurants with a surplus with people in need. It's been built throughout the Tech Returners Your Journey Into Tech course. It integrates with a backend, available here: https://github.com/Codenatics/why-waste-backend.
 
 # Technology Used
 
