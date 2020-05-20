@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../../assets/forms.css";
 import Toolbar from "../Toolbar";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Donate(props) {
 

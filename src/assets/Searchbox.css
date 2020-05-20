@@ -18,12 +18,13 @@
 
 .btn-search {
     height: 40px;
-    background-color: pink;
-    border: 1px pink solid;
+    background-color:pink;
+    border: 1px  pink solid;
     border-radius: 4px;
     font-weight: bolder;
-
+    color: black;
 }
+
 .validation {
     color: yellow;
     position: fixed;

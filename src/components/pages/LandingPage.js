@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../assets/base.css";
 import Toolbar from "../Toolbar";
 import SideDrawer from "../../components/SideDrawer";
@@ -14,7 +15,7 @@ function LandingPage(props) {
         <Toolbar />
         {/* <SideDrawer /> */}
         {/* <Backdrop /> */}
-        <h3>Bridging the gap <br></br> between need and surplus</h3>
+          <h3>Bridging the gap <br></br> between need and surplus</h3>
         <SearchBox />
 
         <Link to="/Donate" id="main-link">I want to donate food</Link>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/Searchbox.css';
 import axios from "axios";
 import Toolbar from "../Toolbar";

@@ -16,7 +16,7 @@ function SearchBox(props) {
         <React.Fragment>
             <form className="search-box">
                 <input type="text" placeholder="Enter your postcode: e.g. M1 3ER" value={search} onChange={updatedSearch} aria-required="true"></input>
-                {!validPostcode? <button class="btn btn-search" disabled>Search</button>:
+                {!validPostcode? <button className="btn btn-search" disabled>Search</button>:
                 <Link to={`/SearchResults?postcode=${search}`}><button class="btn btn-search">Search</button></Link>}
                 {search.length > 5 && !validPostcode ? <h5 className="validation">We couldn't recognise that postcode – check and try again.</h5> : ""}
             </form>
