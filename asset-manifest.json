@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/why-waste-frontend/static/css/main.bd6b21ad.chunk.css",
+    "main.js": "/why-waste-frontend/static/js/main.38805867.chunk.js",
+    "main.js.map": "/why-waste-frontend/static/js/main.38805867.chunk.js.map",
+    "runtime-main.js": "/why-waste-frontend/static/js/runtime-main.613bf6ad.js",
+    "runtime-main.js.map": "/why-waste-frontend/static/js/runtime-main.613bf6ad.js.map",
+    "static/css/2.3665d427.chunk.css": "/why-waste-frontend/static/css/2.3665d427.chunk.css",
+    "static/js/2.f5d80889.chunk.js": "/why-waste-frontend/static/js/2.f5d80889.chunk.js",
+    "static/js/2.f5d80889.chunk.js.map": "/why-waste-frontend/static/js/2.f5d80889.chunk.js.map",
+    "index.html": "/why-waste-frontend/index.html",
+    "precache-manifest.789939625f6941a5a19c1b39148093cf.js": "/why-waste-frontend/precache-manifest.789939625f6941a5a19c1b39148093cf.js",
+    "service-worker.js": "/why-waste-frontend/service-worker.js",
+    "static/css/2.3665d427.chunk.css.map": "/why-waste-frontend/static/css/2.3665d427.chunk.css.map",
+    "static/css/main.bd6b21ad.chunk.css.map": "/why-waste-frontend/static/css/main.bd6b21ad.chunk.css.map",
+    "static/js/2.f5d80889.chunk.js.LICENSE.txt": "/why-waste-frontend/static/js/2.f5d80889.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.613bf6ad.js",
+    "static/css/2.3665d427.chunk.css",
+    "static/js/2.f5d80889.chunk.js",
+    "static/css/main.bd6b21ad.chunk.css",
+    "static/js/main.38805867.chunk.js"
+  ]
+}
